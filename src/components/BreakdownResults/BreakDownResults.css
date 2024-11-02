@@ -1,0 +1,40 @@
+table {
+    width: 100%;            /* Make the table take up the full width of its container */
+    border-collapse: collapse; /* Collapse borders into a single border */
+    margin: 20px 0;         /* Add some margin above and below the table */
+  }
+
+  th, td {
+    padding: 12px;          /* Add some padding inside the cells */
+    text-align: left;       /* Align text to the left */
+    border: 1px solid #ddd; /* Add a light grey border around the cells */
+  }
+
+  th {
+    background-color: #fac1c1; /* Add a background color to the header cells */
+    font-weight: bold;         /* Make the header text bold */
+  }
+
+  tr:nth-child(even) {
+    background-color: #fddfdf; /* Add a background color to even rows */
+  }
+
+  tr:hover {
+    background-color: #fddfdf; /* Add a background color on row hover */
+  }
+
+  .tableDiv{
+    width: 500px;         /* Set the width of the div */
+    height: 70vh;        /* Set the height of the div */
+    overflow: auto;       /* Enable both horizontal and vertical scrolling */
+    border: none; /* Optional: Add a border for better visibility */
+    padding: 10px; 
+  }
+
+  .paymentDetails{
+    font-weight: bold;
+  }
+
+  .details{
+    margin-top: 20px;
+  }
