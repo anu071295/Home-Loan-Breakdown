@@ -78,13 +78,14 @@ export default function NewHomeLoan(){
     for(let month = 1; month <= breakDownFor; month ++){
       if(balance > 0){
         if(monthofYear == 12){
+          year ++;
+        }
+        if(monthofYear == 12){
           monthofYear = 1;
         }else{
           monthofYear++;
         }
-        if(monthofYear == 12){
-          year ++;
-        }
+        
         let interest = balance * monthlyInterestRate;
         let principal = totalMonthlyPayment - interest;
         balance -= principal;
